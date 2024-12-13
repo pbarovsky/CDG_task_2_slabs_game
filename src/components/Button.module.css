@@ -1,27 +1,15 @@
 .btn {
-  color:#ecf0f1;
-  text-decoration:none;
-  border-radius:5px;
-  border:solid 1px #f39c12;
-  background:#e67e22;
-  text-align:center;
-  padding:16px 18px 14px;
-  margin: 0 auto;
-  font-size: 20px;
-  
-  -webkit-transition: all 0.1s;
-  -moz-transition: all 0.1s;
-  transition: all 0.1s;
-  
-  -webkit-box-shadow: 0px 6px 0px #d35400;
-  -moz-box-shadow: 0px 6px 0px #d35400;
-  box-shadow: 0px 6px 0px #d35400;
+  @apply text-gray-100 no-underline rounded-md border border-orange-400 bg-orange-600 text-center px-4 py-4 font-semibold text-lg transition-all duration-100 shadow-btn mx-auto;
 }
 
-.btn:active{
-    -webkit-box-shadow: 0px 2px 0px #d35400;
-    -moz-box-shadow: 0px 2px 0px #d35400;
-    box-shadow: 0px 2px 0px #d35400;
-    position:relative;
-    top:4px;
+.btn:active {
+  @apply shadow-btn-active relative top-1;
+}
+
+.shadow-btn {
+  @apply shadow-[0_6px_0_#d35400];
+}
+
+.shadow-btn-active {
+  @apply shadow-[0_2px_0_#d35400];
 }

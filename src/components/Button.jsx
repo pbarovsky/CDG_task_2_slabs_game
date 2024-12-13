@@ -1,4 +1,3 @@
-import React from 'react';
 import sc from './Button.module.css'
 
 const Button = ({ onClick, children }) => {

@@ -1,41 +1,31 @@
 .game-header {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
+  @apply flex flex-row justify-center gap-3 items-center mt-5;
 }
 
 .game_titles {
-  color: #4b4b4b;
+  @apply text-gray-600 p-2.5 text-center border border-gray-400 rounded-md;
   font-size: clamp(24px, 5vw, 40px);
-  margin: 10px;
-  padding: 10px 25px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  text-align: center;
 }
 
 .game_round {
-  color: #e67e22;
+  @apply text-orange-600;
+}
+
+.round {
+  @apply max-w-[210px] w-full
+}
+
+.time {
+  @apply max-w-[310px] w-full
 }
 
 .game_time {
-  color: #e67e22;
+  @apply text-orange-600;
 }
 
 .game-board {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  gap: 10px;
-  justify-items: center;
-  align-items: center;
-  max-width: 650px;
-  margin: 0 auto;
-  padding: 10px;
+  @apply grid grid-cols-4 grid-rows-4 gap-2.5 justify-items-center items-center max-w-lg mx-auto p-2.5;
 }
-
 
 @media (max-width: 768px) {
   .game_titles {
@@ -43,7 +33,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 450px) {
   .game_titles {
     font-size: clamp(16px, 5vw, 30px);
   }

@@ -61,10 +61,10 @@ const GamePage = ({ onGameOver }) => {
   return (
     <div>
       <header className={sc["game-header"]}>
-        <div className={sc.game_titles}>
+        <div className={`${sc.game_titles} ${sc.round}`}>
           Раунд: <b className={sc.game_round}>{round}</b>
         </div>
-        <div className={sc.game_titles}>
+        <div className={`${sc.game_titles} ${sc.time}`}>
           Осталось: <b className={sc.game_time}>{formatTime(timeLeft)}</b>
         </div>
       </header>

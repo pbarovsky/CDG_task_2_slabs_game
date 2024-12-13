@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import GamePage from "./components/GamePage";
 import GameOverPage from "./components/GameOverPage";
 import StartPage from "./components/StartPage";
@@ -13,7 +13,7 @@ const App = () => {
   };
 
   const endGame = () => setIsGameOver(true);
-  
+
   const restartGame = () => {
     setIsGameStarted(false);
     setIsGameOver(false);
